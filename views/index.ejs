@@ -1,0 +1,16 @@
+<div class="container">
+
+	<form action="/buscar" method="POST" id="sign-up-form" class="form-signin">
+		<h2 class="form.signin-heading">Marcas y tipos de Ropas</h2>
+
+		<div class="control-group">
+			<input type="text" class="form-control" id="name" placeholder="Buscar" name="name">
+		</div>
+		<br>
+			<div id="dataImput"></div>
+		<br>
+		<input type="submit" class="btn btn-lg btn-primary btn-block" value="Buscar" />
+		
+		<input type="hidden" name="_csrf" value="<%= _csrf %>"/>	
+	</form>
+</div>
